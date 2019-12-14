@@ -154,7 +154,7 @@ if configuration.get('scheduler.enabled'):
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
 
-db.define_table('blog',Field('blog_title',requires=IS_NOT_EMPTY()),
+db.def_table('blog',Field('blog_title',requires=IS_NOT_EMPTY()),
              Field('blog_details', type ='text'),
              Field('blog_image', requires=IS_URL()),
              Field('blog_url', requires=IS_URL()),
